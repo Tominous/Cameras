@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 public class MapStorage {
 
     public static void store(int id, byte[][] data) {
-        // String serializedDataSimple = serializeMapDataSimple(data);
+         String serializedDataSimple = serializeMapDataSimple(data);
         String serializedData = serializeMapDataCompressed(data);
 
         File file = new File(Camera.getInstance().getDataFolder(), "maps/map_" + id + ".txt");
